@@ -24,13 +24,14 @@ div.ad_search   { clear: both;
                   color: #4682B4;
                   position:relative;
                   top:50px;
-                  line-height:200%;}
+                  line-height:200%;
+                  zoom:1.25;}
 
 th              { font-size: 200%;
                   color: #4682B4;
                   line-height:200%;}
 
-td.book         { font-size: 100%;
+td              { font-size: 100%;
                   line-height:150%;}
 
 
