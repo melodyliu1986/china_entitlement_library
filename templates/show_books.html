@@ -6,20 +6,10 @@
     <br>
     <head>
         <style type="text/css">
-        th {font-size: 200%}
-        td {font-size: 100%}
+        th {font-size: 200%; color: #4682B4;line-height:200%;}
+        td {font-size: 100%; line-height:150%;}
         </style>
     </head>
-    <div>
-        <img src="/static/sun.png"
-                    style="padding-top:1px"
-                    alt="Lonely Library"
-                    title="Lonely Library"
-                    border="0"
-                    width="600"
-                    height="250"
-                    onload="window.lol&&lol()"/>
-    </div>
     <table>
         <tbody>
             <tr>
@@ -36,4 +26,15 @@
         </tbody>
     </table>
     <h4>Total Number: {{ items|length }}</h4>
+
+    <div style="position:absolute;bottom:0px;right:0px;">
+        <img src="/static/book_sheet.png"
+                    style="padding-top:1px"
+                    alt="Lonely Library"
+                    title="Lonely Library"
+                    border="0"
+                    width="150"
+                    height="120"
+                    onload="window.lol&&lol()"/>
+    </div>
 {% endblock %}
