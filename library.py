@@ -100,6 +100,9 @@ def book_category():
     famous_person_select_str = 'select * from book_owner where category like "%{0}%";'.format("Famous")
     famous_person_items = db.execute(famous_person_select_str).fetchall()
 
+    communication_select_str = 'select * from book_owner where category like "%{0}%";'.format("Communication")
+    communication_items = db.execute(communication_select_str).fetchall()
+
     return render_template("book_categories.html",
                            time1_items=time1_items,
                            time2_items=time2_items,
@@ -107,7 +110,8 @@ def book_category():
                            skill_items=skill_items,
                            management_items=management_items,
                            leadership_items=leadership_items,
-                           famous_person_items=famous_person_items)
+                           famous_person_items=famous_person_items,
+                           communication_items=communication_items)
 
 
 @app.route('/no_result')

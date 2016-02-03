@@ -1,13 +1,14 @@
 {% extends "layout.html" %}
+
 {% block body %}
     <br>
     <div>
         <br>
         <br>
         <br>
-        <h2>Classify books by categories</h2>
-        <h3>Skill:</h3>
-            <div>
+        <h2>Classify books by categories:</h2>
+        <h3><a href="###" onclick="openShutManager(true,'h3',false,'Skill','Skill')">Skill</a> </h3>
+            <div id="h3" style="display:none">
                 {% for item in skill_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
@@ -17,19 +18,9 @@
                 {% endfor %}
                 <h4>Total Number: {{ skill_items|length }}</h4>
             </div>
-        <h3>Management:</h3>
-            <div>
-                {% for item in management_items %}
-                <tr>
-                    <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
-                    <td align="left">{{ item[2] }}</td>
-                    <br>
-                </tr>
-                {% endfor %}
-                <h4>Total Number: {{ management_items|length }}</h4>
-            </div>
-        <h3>Leadership:</h3>
-            <div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h6',false,'Leadership','Leadership')">Leadership</a></h3>
+            <div id="h6" style="display:none">
                 {% for item in leadership_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
@@ -39,8 +30,33 @@
                 {% endfor %}
                 <h4>Total Number: {{ leadership_items|length }}</h4>
             </div>
-        <h3>Famous Person:</h3>
-            <div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h5',false,'Management','Management')">Management</a></h3>
+            <div id="h5" style="display:none">
+                {% for item in management_items %}
+                <tr>
+                    <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
+                    <td align="left">{{ item[2] }}</td>
+                    <br>
+                </tr>
+                {% endfor %}
+                <h4>Total Number: {{ management_items|length }}</h4>
+            </div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h8',false,'Communication','Communication')">Communication</a></h3>
+            <div id="h8" style="display:none">
+                {% for item in communication_items %}
+                <tr>
+                    <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
+                    <td align="left">{{ item[2] }}</td>
+                    <br>
+                </tr>
+                {% endfor %}
+                <h4>Total Number: {{ communication_items|length }}</h4>
+            </div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h7',false,'Famous Person','Famous Person')">Famous&nbspPerson</a></h3>
+            <div id="h7" style="display:none">
                 {% for item in famous_person_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
@@ -52,11 +68,13 @@
             </div>
     </div>
 
-    <br>
     <div>
-        <h2>Classify books by brought time</h2>
-        <h3>Before 2015:</h3>
-            <div>
+        <br>
+        <br>
+        <h2>Classify books by bought time:</h2>
+
+        <h3><a href="###" onclick="openShutManager(true,'h9',false,'Before 2015','Before 2015')">Before&nbsp2015</a></h3>
+            <div id="h9" style="display:none">
                 {% for item in time1_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
@@ -66,8 +84,9 @@
                 {% endfor %}
                 <h4>Total Number: {{ time1_items|length }}</h4>
             </div>
-        <h3>FY2015:</h3>
-            <div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h10',false,'FY15','FY15')">FY15</a></h3>
+            <div id="h10" style="display:none">
                 {% for item in time2_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
@@ -77,8 +96,9 @@
                 {% endfor %}
                 <h4>Total Number: {{ time2_items|length }}</h4>
             </div>
-        <h3>FY2016:</h3>
-            <div>
+
+        <h3><a href="###" onclick="openShutManager(true,'h11',false,'FY16','FY16')">FY16</a></h3>
+            <div id="h11" style="display:none">
                 {% for item in time3_items %}
                 <tr>
                     <td align="left"><a href="{{ item[3] }}"> {{ item[1] }}</a></td>
