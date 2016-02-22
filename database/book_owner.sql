@@ -15,6 +15,7 @@ buytime  NVARCHAR not null
 INSERT INTO book_owner
 (book, owner, url, category, buytime)
 values
+("python编程实践", "soliu", "http://item.jd.com/10890841.html", "Skill", "Before 2015"),
 ("IT项目管理成长手记", "sgao", "http://item.jd.com/11162058.html", "Management", "Before 2015"),
 ("自动化测试最佳实践", "shihliu", "http://item.jd.com/11221731.html", "Skill", "Before 2015"),
 ("Linux命令行与Shell脚本编程大全", "liliu", "http://item.jd.com/11075150.html", "Skill", "Before 2015"),
