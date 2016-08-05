@@ -1,3 +1,5 @@
+__author__ = 'liusong'
+
 import os
 import sqlite3
 import sys
