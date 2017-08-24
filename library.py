@@ -89,6 +89,9 @@ def book_category():
     time3_select_str = 'select * from book_owner where buytime like "%{0}%";'.format("FY16")
     time3_items = db.execute(time3_select_str).fetchall()
 
+    time4_select_str = 'select * from book_owner where buytime like "%{0}%";'.format("FY18")
+    time4_items = db.execute(time4_select_str).fetchall()
+
     # Select by category.
     skill_select_str = 'select * from book_owner where category like "%{0}%";'.format("Skill")
     skill_items = db.execute(skill_select_str).fetchall()
@@ -109,6 +112,7 @@ def book_category():
                            time1_items=time1_items,
                            time2_items=time2_items,
                            time3_items=time3_items,
+                           time4_items=time4_items,
                            skill_items=skill_items,
                            management_items=management_items,
                            leadership_items=leadership_items,
