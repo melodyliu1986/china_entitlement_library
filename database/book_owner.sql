@@ -32,6 +32,6 @@ INSERT INTO book_owner (book, owner, url, category, buytime) values ("LEAN IN", 
 INSERT INTO book_owner (book, owner, url, category, buytime) values ("MySQL必知必会", "soliu", "http://item.jd.com/10063118.html", "Skill", "Q4FY15");
 INSERT INTO book_owner (book, owner, url, category, buytime) values ("Jenkins: The Definitive Guide", "sgao", "http://item.jd.com/1142122822.html", "Skill", "Q1FY16");
 INSERT INTO book_owner (book, owner, url, category, buytime) values ("Getting Things Done: The Art of Stress-Free Productivity", "hsun", "http://item.jd.com/19538697.html", "Skill", "Q2FY16");
-INSERT INTO book_owner (book, owner, url, category, buytime) values ("向死而生：我修的死亡学分", "gxing", "向死而生：我修的死亡学分", "Famous Person", "Q2FY16");
+INSERT INTO book_owner (book, owner, url, category, buytime) values ("向死而生：我修的死亡学分", "gxing", "https://item.jd.com/11709327.html", "Famous Person", "Q2FY16");
 INSERT INTO book_owner (book, owner, url, category, buytime) values ("乔布斯传", "soliu", "http://item.jd.com/1439168307.html", "Famous Person", "Q2FY16");
 INSERT INTO book_owner (book, owner, url, category, buytime) values ("开源容器云—OpenShift", "ldai", "http://item.jd.com/12104971.html", "Skill", "Q2FY18");
