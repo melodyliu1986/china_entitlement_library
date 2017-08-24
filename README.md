@@ -28,6 +28,10 @@ database/ - Library database writen by sqlite3.
 templates/ - Contains jinja2 templates.   
 static/ - Contains imgs and .css files used in app.
 
+# How to update DB?
+
+$ sqlite3 book_owner.db < book_owner.sql
+
 # Running
 
 python library.py
